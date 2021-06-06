@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <title>Family Book</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>
+            <b>
+            FAMILY BOOK
+            </b>
+        </h1>
+        <img src="Family Book.jpg" id="img-album">
+        <h5 id="Family_Member_Name"></h5>
+        <button type="button" id="back" onclick= "downgrade()">Back</button>
+        <button type="button" id="next" onclick= "update()">Next</button>
+    </body>
+    <script>
+    var images = ["Myself.jpg",
+     "My Father.jpg",
+     "mother.jpg",
+    "sister.jpg"];
+
+    var identity = [
+    "Soham Pawar",
+     "Sameer Pawar",
+     "Supriya Pawar",
+     "Swara Pawar"];
+        
+        var i = 0;
+        function update()
+    {
+        var UpdatedImg = images[i];
+        var Updatedidentity = identity[i];
+        document.getElementById("Family_Member_Name").innerHTML =  Updatedidentity;
+        document.getElementById("img-album").src = UpdatedImg;
+            i++;
+            var number_of_family_members_in_array = 3;
+        if(i > number_of_family_members_in_array)
+        {
+            i = 0;
+        }
+    }
+        function downgrade()
+    {
+        var UpdatedImg2 = images[i];
+        var Updatedidentity2 = identity[i];
+        document.getElementById("Family_Member_Name").innerHTML =  Updatedidentity2;
+        document.getElementById("img-album").src = UpdatedImg2;
+            i--;
+            var number_of_family_members_in_array2 = 0;
+        if(i < number_of_family_members_in_array2)
+        {
+            i = 3;
+        }
+    }
+    </script>
+</html>

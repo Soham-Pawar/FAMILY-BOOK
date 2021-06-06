@@ -1,0 +1,33 @@
+body{
+    text-align: center;
+    background-image: linear-gradient(to bottom, pink,aqua);
+}
+#img-album{
+    width:400px;
+     height:450px;
+      border-style:solid;
+        border-color:black;
+        border-width: 7px;
+        border-radius: 28px;
+        padding: 5px;
+}
+#Family_Member_Name{
+    font-size: 20px;
+    color: rgb(118, 4, 224);
+}
+#back{
+    height: 25px;
+    width: 45px;
+    color: black;
+    background-color: red;
+    margin-right: 10px;
+    font-weight: bolder;
+}
+#next{
+    height: 25px;
+    width: 45px;
+    color: black;
+    background-color:green;
+    margin-right: 10px;
+    font-weight: bolder;
+}
